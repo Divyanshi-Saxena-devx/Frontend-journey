@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    text-align:center;
+    }
+    form{
+        width: 450px;
+        padding: 25px;
+        border: 2px solid light rgb(46, 182, 46);
+        border-radius: 15px;
+        box-shadow: 1px 2px 3px rgb(46, 182, 46);
+        text-align: left;
+    }
+    input[type="text"], input[type="email"],input[type="tel"], select {
+        border-radius: 8px;
+        border: 1px solid grey;
+        padding: 5px;
+        float: right;
+        width: 200px;
+    }
+    textarea {
+        border-radius: 4px;
+        border: 1px solid grey;
+    }
+    button{
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 6px;
+    }
+</style>
+
+<body>
+    <img src="https://aidasco.org/wp-content/uploads/2021/03/GLA-U-logo-1024x432.jpg" width="280">
+    <hr color="green" size="2">
+
+    <h2>Registration form</h2>
+<center>
+    <form>
+        <b>First Name</b> <input type="text"><br><br>
+        <b>Last Name</b> <input type="text"><br><br>
+        <b>Email</b> <input type="email"><br><br>
+        <b>Mobile</b> <input type="tel"><br><br>
+
+        <b>Select your gender</b>
+            <span style="float: right;">
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+                <input type="radio" name="gender"> Others
+                </span><br><br>
+
+                <b>Recent Education</b> <input type="text"><br><br>
+                <b>Select your interested course</b>
+                <select>
+                    <option>B. Tech</option>
+                    <option>M. Tech</option>
+                    <option>BCA</option>
+                    <option>BBA</option>
+                </select><br><br><br>
+
+                <center>
+                    <textarea placeholder="Write your query here..."></textarea><br><br>
+                    <button type="submit">Submit</button>
+                </center>
+    </form>
+</center>
+    
+</body>
+</html>
