@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acrylic</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Acrylic</h1>
+    <div id="box" contenteditable="true">
+        <span id ="text">Hello</span>
+    </div>
+    
+    <div class="container">
+    
+        <div>
+            <h3>Background Color</h3>
+            <button onclick="ChangeBackgroundColor('beige')"style="background-color: Beige;"></button>
+            <button onclick="ChangeBackgroundColor('lightblue')" style="background-color: Blue;"></button>
+            <button onclick="ChangeBackgroundColor('lightgrey')" style="background-color: Grey;"></button>
+        </div>
+        
+        <div>
+            <h3>Text Color</h3>
+            <button onclick="ChangeTextColor('green')"style="background-color: Green;"></button>
+            <button onclick="ChangeTextColor('red')"style="background-color: Red;"></button>
+            <button onclick="ChangeTextColor('blue')"style="background-color: Blue;"></button>
+        </div>
+
+        <div>
+            <h3>Font</h3>
+            <button class = "font-btn" onclick="ChangeFont('Arial')">Arial</button>
+            <button class = "font-btn" onclick="ChangeFont('Cursive')">Cursive</button>
+        </div>
+
+    </div>
+
+    <script>
+
+        function ChangeBackgroundColor(color) {
+            document.getElementById("box").style.backgroundColor = color;
+        }
+
+        
+        function ChangeTextColor(color) {
+            document.getElementById("text").style.color = color;
+        }
+
+        
+        function ChangeFont(font) {
+            document.getElementById("text").style.fontFamily = font;
+        }
+
+    </script>
+</body>
+</html>
